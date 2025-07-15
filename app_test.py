@@ -102,6 +102,7 @@ def update_timeseries(clickData, n_clicks):
     
     # If reset button clicked
     return get_all_ts_plot()
-
+    
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8050))  # Use Render's assigned port
+    app.run_server(host="0.0.0.0", port=port)
