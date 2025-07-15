@@ -1,0 +1,4 @@
+dash==2.16.1
+pandas>=1.5.0
+plotly>=5.15.0
+gunicorn  # Required by Render to run the app
